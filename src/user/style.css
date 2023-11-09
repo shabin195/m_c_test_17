@@ -1,146 +1,275 @@
-.mainDiv{
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.row{
+    max-width: 100%;
+}
+.mainDiv {
     justify-content: center;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
 }
-.signin-btn{
+
+.signin-btn {
     cursor: pointer;
     padding: 15px 8px;
     font-size: 18px;
     color: #fff;
-    cursor:pointer;
+    cursor: pointer;
     width: 100%;
     background-color: #000;
     border: none;
     font-weight: 700;
 }
-.rightBtn{
-    padding: 10px;   
-    cursor:pointer; 
+
+.rightBtn {
+    padding: 10px;
+    cursor: pointer;
 }
-.mandatory{
-    color:red;
+
+.mandatory {
+    color: red;
 }
-.formField{
+
+.formField {
     height: 25px;
     width: 300px;
     border: 2px solid #000;
     padding: 9px 8px;
 }
-.fieldOuter{
+
+.fieldOuter {
     margin-top: 20px;
+    width: 100% !important;
 }
-.formField::placeholder{
+
+.formField::placeholder {
     font-size: 17px;
     color: #000;
 }
-.checkbox-text{
+
+.checkbox-text {
     margin-left: 10px;
     font-size: 17px;
 }
-.fieldOuter-line{
+
+.fieldOuter-line {
     display: flex;
     align-items: center;
+    text-align: center;
 }
-.line{
+
+.line {
     height: 3px;
     flex: 1;
     background-color: #d4d4d4;
 }
-.sign-text{
+
+.sign-text {
 
     padding: 10px 25px;
     font-size: 18px;
     font-weight: 700;
+    max-width: fit-content !important;
 
 }
-.a-create{
+
+.a-create {
     text-decoration: none;
     padding-left: 10px;
     color: rgba(23, 117, 204, 0.898)(0, 0, 252, 0.898);
     font-weight: 600;
 }
-.socialicon img{
-    width: 35px;
+
+.socialicon img {
+    width: 30px;
 }
-.socialicon{
+
+.socialicon {
     width: 20%;
     display: inline-block;
 }
-.social-icon-center{
+
+.social-icon-center {
     text-align: center;
 }
-.main-headdiv{
+
+.main-headdiv {
     text-align: center;
     margin-bottom: 25px;
 }
-.inlinediv{
+
+.inlinediv {
     display: inline-block;
-    width: 40%;
-    border: 1px solid #000;
-    margin: 10px;
-    height: 120px;
+    width: 100%;
+    border: 2px solid #000;
+    margin: 3px;
+    /* height: 94px; */
+    /* min-height: 100px; */
+    height: 100%;
     vertical-align: top;
+
 }
-.country-wrpr{
+
+.country-wrpr {
     margin: 10px 40px;
 }
-.inine-outer{
+
+.inine-outer {
     text-align: center;
     /* min-height: 100vh; */
-   padding-top: 30px;
-   padding-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 50px;
 }
-.inlineimg{
+
+.inlineimg {
     display: inline-block;
-    width: 20%;
+    max-width: 20%;
     vertical-align: top;
 }
-.inlinetext{
-    width: 60%;
+
+.inlinetext {
+    width: 70%;
     display: inline-block;
     vertical-align: middle;
-    padding-top: 20px;
+    padding-top: 2px;
+    padding-left: 46px;
 }
-.inlinediv{
+
+.inlinediv {
     text-align: left;
     padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
 }
-.inlineimg img{
-    width: 66px;
-    padding: 20px 10px;
+
+.inlineimg img {
+    max-width: 107px;
+    /* transform: translate(50%,50%); */
+    margin-right: 10px;
+    /* padding: 20px 10px; */
 }
-.inline-h3{
+
+.inline-h3 {
     margin: 0;
-}.inline-p{
-    margin: 10px 0;
 }
-.country-head{
+
+.inline-p {
+    margin: 10px 0;
+    color: #adb5bd;
+}
+
+.country-head {
     padding-left: 66px;
 }
-.header-wrpr{
+
+.header-wrpr {
     display: flex;
     justify-content: space-between;
     padding: 10px 66px;
 }
-.right ul li{
+
+.right ul li {
     list-style: none;
     display: inline-block;
     margin: 10px;
 }
-.right ul li:hover{
+
+.right ul li:hover {
     text-decoration: underline;
     cursor: pointer;
 }
-.footer-socialicon img{
+
+.footer-socialicon img {
     width: 35px;
 }
-.footer-socialicon{
+
+.footer-socialicon {
     display: inline-block;
     margin: 10px;
 }
-.footertext{
+
+.footertext {
     text-align: center;
 }
+
+.rightalign {
+    justify-content: flex-end;
+}
+
+.fullwidth {
+    width: 100%;
+}
+.fullwidthOverride{
+    width: 100% !important;
+}
+.halfwidth {
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.centeralign {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.loginrow {
+    height: 100vh;
+}
+
+.centeralign div {
+    width: 100%;
+    padding: 10px;
+  }
+  
+  @media (min-width: 768px) {
+    .centeralign div {
+      max-width: 80%;
+    }
+  }
+  
+
+.main-headdiv {
+    text-align: left;
+}
+
+.social-icon-center {
+    display: flex;
+    justify-content: center;
+}
+.signin-btn{
+    border-radius: 8px;
+    
+}
+.sign-in-container {
+    position: relative;
+}
+
+.sign-in-text {
+    display: inline-block;
+    background-color: white;
+    padding: 0 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.line-through {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: black;
+    z-index: 0;
+}
+
+
+/* .headerWidth{
+    max-width: 80%;
+} */
